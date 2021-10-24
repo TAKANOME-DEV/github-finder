@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .isValid {
+        position: absolute;
+        top: 75%;
+        right: 3%;
+      }
+      .success {
+        color: green;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+    <title>Github Finder</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fab fa-github-alt"></i>
+          <span class="mx-2">Github Finder</span>
+          <i class="fab fa-searchengin"></i>
+        </a>
+        <a
+          class="navbar-brand"
+          href="https://twitter.com/takanome_dev"
+          target="_blank"
+        >
+          <i class="fab fa-twitter"></i>
+          <span class="mx-2">Twitter</span>
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="card card-body bg-primary text-center mt-3 has-danger">
+        <h1>Search Github users</h1>
+        <p class="lead">Enter a username to fetch a user profile and repos</p>
+        <input
+          type="text"
+          id="searchUser"
+          class="form-control"
+          placeholder="Github User..."
+        />
+      </div>
+      <div id="profile"></div>
+    </div>
+
+    <footer class="mt-5 p-3 text-center bg-primary">
+      <h5><strong>takanome_dev</strong> &copy;</h5>
+    </footer>
+
+    <script src="./github.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
