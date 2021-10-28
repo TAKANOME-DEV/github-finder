@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lambda-serve": "netlify-lambda serve functions",
-    "lambda-build": "netlify-lambda build functions"
+    "lambda-build": "netlify-lambda build functions",
+    "test": "snyk test"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "dependencies": {
     "axios": "^0.23.0",
     "netlify-lambda": "^2.0.15"
+  },
+  "devDependencies": {
+    "snyk": "^1.746.0"
   }
 }
