@@ -24,6 +24,6 @@
     "netlify-lambda": "^2.0.15"
   },
   "devDependencies": {
-    "snyk": "^1.746.0"
+    "snyk": "1.953.0"
   }
 }
